@@ -1,0 +1,22 @@
+{
+	"configurations": [
+		{
+			"type": "lldb",
+			"request": "launch",
+			"name": "Debug Run",
+			"program": "${workspaceFolder:swift-image-host}/.build/debug/Run",
+			"args": [],
+			"cwd": "${workspaceFolder:swift-image-host}",
+			"preLaunchTask": "swift: Build Debug Run"
+		},
+		{
+			"type": "lldb",
+			"request": "launch",
+			"name": "Release Run",
+			"program": "${workspaceFolder:swift-image-host}/.build/release/Run",
+			"args": [],
+			"cwd": "${workspaceFolder:swift-image-host}",
+			"preLaunchTask": "swift: Build Release Run"
+		}
+	]
+}
